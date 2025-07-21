@@ -1,0 +1,153 @@
+.chat-container {
+  max-width: 600px;
+  max-height: 70vh;
+  margin: 50px auto;
+  background: linear-gradient(to bottom right, #e0f7fa, #e8f5e9);
+  border-radius: 0px;
+  overflow: auto;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+body{
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  position: fixed;
+  width: 600px;
+  align-items: center;
+  padding: 15px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.header .icon {
+  font-size: 28px;
+  color: #00796b;
+  margin-right: 10px;
+}
+
+.messages {
+  min-height: 200px;
+  background: #f0fdf4;
+  height: 373px;
+  overflow-y: auto;
+  position: absolute;
+  top: 130px;
+  width: 600px;
+  overflow-x: hidden;
+}
+
+.message {
+  margin-bottom: 0px;
+}
+
+.message.bot p {
+  font-size: 80%;
+  width: 150px;
+  background: #ffffff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: #333;
+  display: inline-block;
+}
+
+.message.model p{padding: 25px 20px;}
+
+.message.user p {
+  width: 500px;
+  background: #e1f5fe;
+  padding: 10px 5px;
+  border-radius: 10px;
+  color: #01579b;
+  display: inline-block;
+  text-align: center;
+}
+
+.message span {
+  display: block;
+  font-size: 12px;
+  color: gray;
+  margin-top: 4px;
+}
+
+.quick-actions {
+  margin-top: auto;
+  z-index: 50;
+  display: flex;
+  width: 600px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+.quick-actions button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.input-area {
+  top: 76.9vh;
+  width: 600px;
+  position: absolute;
+  z-index: 100;
+  transform: translateY(-100%);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #ffffff;
+  border-top: 1px solid #ddd;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  margin: 0 10px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.input-area button {
+  background: #8e99f3;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-icon {
+  color: #888;
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+.bot-bubble {
+  background: #ffffff;
+  padding: 12px 15px;
+  border-radius: 10px;
+  max-width: 85%;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+}
+
+.bot-bubble p {
+  margin: 4px 0;
+  font-size: 90%;
+  line-height: 1.4;
+  color: #333;
+}

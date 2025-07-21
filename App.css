@@ -1,0 +1,27 @@
+/*body {
+  margin: 0;    ex-1
+  height: 100vh;
+  background: linear-gradient(to right, #74ebd5, #9face6);
+  font-family: 'Segoe UI', sans-serif;
+}*/
+
+/* body {
+  margin: 0;    ex-2
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background-size: cover;
+  font-family: 'Segoe UI', sans-serif;
+} */
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(to right, #1e3c72, #2a5298, #0f9b8e);
+  background-size: cover;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+.App {
+  text-align: center;
+}
